@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="800dp"
+    android:minHeight="300dp"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/filter_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        android:text="Filter jobs"
+        />
+    <EditText
+        android:id="@+id/filter_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Description"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="eg. Job position, programming language etc...">
+    </TextView>
+    <EditText
+        android:id="@+id/filter_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Location"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="eg. City name, zip code, country etc..."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Full time only?"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp">
+
+        </TextView>
+        <CheckBox
+            android:layout_marginLeft="220dp"
+            android:id="@+id/filter_full_time"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/filter_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/filter_button"/>
+
+</LinearLayout>
